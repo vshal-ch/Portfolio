@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <svg
+      width="471"
+      height="104"
+      viewBox="0 0 471 104"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M91.4539 1.632L53.5819 102H38.4619L0.589874 1.632H14.5579L46.0939 88.176L77.6299 1.632H91.4539Z"
+        stroke="white" stroke-width='7px' stroke-linecap="round" stroke-linejoin="round"
+      />
+      <path d="M118.926 1.632V102H105.822V1.632H118.926Z" stroke="white" stroke-width='7px' stroke-linecap="round" stroke-linejoin="round"/>
+      <path
+        d="M173.084 103.008C166.46 103.008 160.508 101.856 155.228 99.552C150.044 97.152 145.964 93.888 142.988 89.76C140.012 85.536 138.476 80.688 138.38 75.216H152.348C152.828 79.92 154.748 83.904 158.108 87.168C161.564 90.336 166.556 91.92 173.084 91.92C179.324 91.92 184.22 90.384 187.772 87.312C191.42 84.144 193.244 80.112 193.244 75.216C193.244 71.376 192.188 68.256 190.076 65.856C187.964 63.456 185.324 61.632 182.156 60.384C178.988 59.136 174.716 57.792 169.34 56.352C162.716 54.624 157.388 52.896 153.356 51.168C149.42 49.44 146.012 46.752 143.132 43.104C140.348 39.36 138.956 34.368 138.956 28.128C138.956 22.656 140.348 17.808 143.132 13.584C145.916 9.36 149.804 6.09599 154.796 3.792C159.884 1.488 165.692 0.335999 172.22 0.335999C181.628 0.335999 189.308 2.688 195.26 7.392C201.308 12.096 204.716 18.336 205.484 26.112H191.084C190.604 22.272 188.588 18.912 185.036 16.032C181.484 13.056 176.78 11.568 170.924 11.568C165.452 11.568 160.988 13.008 157.532 15.888C154.076 18.672 152.348 22.608 152.348 27.696C152.348 31.344 153.356 34.32 155.372 36.624C157.484 38.928 160.028 40.704 163.004 41.952C166.076 43.104 170.348 44.448 175.82 45.984C182.444 47.808 187.772 49.632 191.804 51.456C195.836 53.184 199.292 55.92 202.172 59.664C205.052 63.312 206.492 68.304 206.492 74.64C206.492 79.536 205.196 84.144 202.604 88.464C200.012 92.784 196.172 96.288 191.084 98.976C185.996 101.664 179.996 103.008 173.084 103.008Z"
+        stroke="white" stroke-width='7px' stroke-linecap="round" stroke-linejoin="round"
+      />
+      <path
+        d="M303.104 1.632V102H290V56.496H238.88V102H225.776V1.632H238.88V45.696H290V1.632H303.104Z"
+        stroke="white" stroke-width='7px' stroke-linecap="round" stroke-linejoin="round"
+      />
+      <path
+        d="M384.807 79.68H341.031L332.967 102H319.143L355.431 2.208H370.551L406.695 102H392.871L384.807 79.68ZM381.063 69.024L362.919 18.336L344.775 69.024H381.063Z"
+        stroke="white" stroke-width='7px' stroke-linecap="round" stroke-linejoin="round"
+      />
+      <path
+        d="M435.614 91.344H470.75V102H422.51V1.632H435.614V91.344Z"
+        stroke="white" stroke-width='7px' stroke-linecap="round" stroke-linejoin="round"
+      />
+    </svg>
+    <script>
+        let paths = document.getElementsByTagName('path');
+        for(let i=0;i<paths.length;i++){
+            paths[i].style.strokeDasharray = `${paths[i].getTotalLength()}`;
+            paths[i].style.strokeDashoffset = `${paths[i].getTotalLength()}`;
+        }
+    </script>
+</body>
+</html>
